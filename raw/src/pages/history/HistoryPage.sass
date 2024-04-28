@@ -1,0 +1,115 @@
+#History
+    width: 100%
+    min-height: 100%
+    display: flex
+
+    .Infos
+        .Definition
+            padding: 5px
+            font-style: italic
+        p
+            display: inline-block
+
+#Histogram
+    float: left
+    padding: 20px
+    padding-top: 39px
+
+    .row
+        float: left
+        width: 100%
+        margin-bottom: 3px
+
+        .year
+            display: table-cell
+            float: left
+            display: block
+            width: 50px
+            color: #777
+            font-size: 13px
+        .dots
+            display: table-cell
+        .dot
+            float: left
+            width: 11px
+            height: 11px
+            background: #ccc
+            margin-bottom: 5px
+            margin-right: 5px
+            border-radius: 100%
+            cursor: pointer
+            
+        .dot:hover
+            box-shadow: 0 0 1px #000
+
+    .ScrollHint
+        width: 70%
+        position: fixed
+        bottom: 30px
+        text-align: center
+        pointer-events: none
+
+        div
+            display: inline-block
+            padding: 0 20px
+            background: rgba(255, 255, 255, 0.87)
+            box-shadow: 0 0 3px #bbb
+            border-radius: 100px
+            cursor: pointer
+            pointer-events: auto
+        p
+            margin-bottom: 0
+            display: inline
+        img
+            width: 50px
+            vertical-align: middle
+
+    #HistogramBottom
+        position: relative
+        float: left
+        background: linear-gradient(to bottom, transparent 0%, #eee 20%)
+        width: 100%
+        height: 100px
+        z-index: 2
+
+.AnimeDetails
+    img
+        margin-bottom: 15px
+
+#HistogramDetails
+    height: 100%
+
+    .AnimeDetails, .Infos
+        padding: 30px
+        height: calc(100% - 80px)
+        overflow: auto
+
+    .Infos
+        .CallToAction
+            display: inline-block
+            text-align: center
+            font-weight: bold
+            width: 100%
+
+    .Scale
+        position: relative
+        top: 50px
+        left: 30px
+        width: calc(100% - 60px)
+        .Gradient
+            width: 100%
+            height: 10px
+            background: rgb(255,212,57)
+            background: linear-gradient(90deg, rgba(255,212,57,1) 0%, rgba(155,65,0,1) 100%)
+            border: 1px solid #eee
+        p
+            display: block
+            position: absolute
+            top: -27px
+        .ScaleLabel
+            width: 100%
+            text-align: center
+        .Min
+            left: 0px
+        .Max
+            right: 0px
